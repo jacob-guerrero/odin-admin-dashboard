@@ -32,8 +32,31 @@ html, body {
     grid-row: 1 / -1;
     grid-column: 1;
     border: 1px solid black;
+
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-columns: 1fr;
 }
 
 #main-content {
     grid-area: 2 / 2;
+}
+
+
+.branding {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+.links {
+    grid-area: 2 / 1;
+}
+.info {
+    grid-area: 3 / 1;
+}
+
+.option, .branding {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
 }
