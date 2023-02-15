@@ -13,7 +13,9 @@ html, body {
     height: 100%;
     margin: 0;
 }
-
+h1, h2, h3, p {
+    margin: 0;
+}
 
 #grid-container {
     height: 100%;
@@ -86,4 +88,36 @@ html, body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+}
+.bottom {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.profile-info {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+.profile-info > img {
+    grid-row: 1;
+    grid-column: 1;
+}
+.profile-text {
+    grid-column: 2;
+}
+.side-profile-btns {
+    display: grid;
+    grid-template: 1fr / repeat(3, 5rem);
+    gap: 2rem;
+    justify-content: center;
+}
+.btn {
+    grid-row: 1;
+    width: 5rem;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
