@@ -43,6 +43,7 @@ html, body {
 }
 
 
+/* Side bar */
 .branding {
     grid-column: 1 / -1;
     grid-row: 1;
@@ -59,4 +60,30 @@ html, body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 4fr;
+}
+
+
+/* Header */
+#header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.top {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.search-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.side-search-box {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
