@@ -9,7 +9,6 @@ html {
     box-sizing: inherit;
 }
 html, body {
-    height: 100%;
     margin: 0;
 }
 h1, h2, h3, p {
@@ -17,7 +16,7 @@ h1, h2, h3, p {
 }
 
 #grid-container {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -123,16 +122,18 @@ h1, h2, h3, p {
 }
 
 
+
 /* Main content */
 #main-content {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 3fr 1fr;
+    gap: 15px;
 
     padding: 24px 16px;
 }
 
-#projects {
+#projects, #announcements, #trending {  /* Use the same structure title-content */
     display: grid;
     grid-template-rows: 2rem 1fr;
 
@@ -158,4 +159,32 @@ h1, h2, h3, p {
 .icon-container {
     align-self: end;
     justify-self: end;
+}
+
+
+/* Side Main Content */
+#side-main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    
+}
+.announ-container, .trend-container {
+    height: calc(100% - 4rem);  /* Edit correct sizes */
+    border: 1px solid black;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    overflow-y: auto;
+}
+
+.announ-title, .trend-title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.announ-desc, .trend-desc {
+    font-size: 0.9rem;
 }
