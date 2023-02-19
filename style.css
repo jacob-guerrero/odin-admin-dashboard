@@ -62,13 +62,17 @@ h1, h2, h3, p {
 .info {
     grid-area: 3 / 1;
 }
+.links, .info, .branding {
+    padding: 0 1.5rem;
+}
 
 .option, .branding {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 25px 1fr;
 
     align-items: center;
+    gap: 1rem;
 }
 .option h2 {
     font-size: 1.1rem;
@@ -94,8 +98,19 @@ h1, h2, h3, p {
 .search-box {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 25px minmax(200px, 800px);
+    grid-template-columns: 25px minmax(200px, 750px);
     align-items: center;
+}
+.search-box input {
+    border-radius: 20px;
+    background-color: #eee;
+    padding: 6px 16px;
+    margin-left: 14px;
+}
+input, button {
+    appearance: none;
+    border: 0;
+    outline: 0;
 }
 .side-search-box {
     display: grid;
@@ -155,8 +170,8 @@ h1, h2, h3, p {
 .btn {
     grid-row: 1;
     width: 5rem;
-    padding: 4px 8px;
-    border-radius: 4px;
+    padding: 8px 16px;
+    border-radius: 14px;
 }
 
 
