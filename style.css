@@ -49,6 +49,11 @@ h1, h2, h3, p {
 .branding {
     grid-column: 1 / -1;
     grid-row: 1;
+
+    align-items: center;
+}
+.branding h1 {
+    font-size: 1.3rem;
 }
 
 .links {
@@ -62,6 +67,9 @@ h1, h2, h3, p {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 4fr;
+}
+.option h2 {
+    font-size: 1.1rem;
 }
 
 
@@ -88,6 +96,9 @@ h1, h2, h3, p {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+}
+.profile-text h2 {
+    font-size: 1.2rem;
 }
 .bottom {
     display: grid;
