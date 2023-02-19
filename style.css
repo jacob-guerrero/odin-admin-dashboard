@@ -67,6 +67,8 @@ h1, h2, h3, p {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 4fr;
+
+    align-items: center;
 }
 .option h2 {
     font-size: 1.1rem;
@@ -76,29 +78,39 @@ h1, h2, h3, p {
 /* Header */
 #header {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: calc(100%/3) 1fr;
     grid-template-columns: 1fr;
 }
 .top {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 2rem;
 }
 .search-box {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 25px 1fr;
     align-items: center;
 }
 .side-search-box {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 25px 35px 1fr;
     align-items: center;
+    gap: 1rem;
 }
-.profile-text h2 {
-    font-size: 1.2rem;
+.search-box svg, .side-search-box svg {
+    width: calc(100%);
+}
+.side-search-box img {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.profile-name {
+    font-size: 1rem;
 }
 .bottom {
     display: grid;
@@ -119,6 +131,9 @@ h1, h2, h3, p {
 }
 .profile-text {
     grid-column: 2;
+}
+.profile-text h2 {
+    font-size: 1.2rem;
 }
 .side-profile-btns {
     display: grid;
