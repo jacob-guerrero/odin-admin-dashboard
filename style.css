@@ -198,10 +198,12 @@ input, button {
 }
 #projects {
     height: 100%;
-    border: 1px solid black;
 }
 .title-sect {
+    font-size: 1.4rem;
+    font-weight: 700;
     grid-area: 1 / 1;
+    align-self: center;
 }
 .publi-sect {
     height: 100%;
@@ -211,7 +213,7 @@ input, button {
     grid-template-rows: minmax(100px, 200px);
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100px, 200px);
-    gap: 15px;
+    gap: 1.6rem;
 
     overflow-y: auto;
 }
@@ -245,11 +247,8 @@ input, button {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-
-    border: 1px solid black;
 }
 .announ-container, .trend-container {
-    height: calc(100% - 4rem);
     border: 1px solid black;
     border-radius: 8px;
 
@@ -259,9 +258,16 @@ input, button {
     grid-auto-rows: 1fr;
     overflow-y: auto;
 }
+.announ-container {
+    height: calc(100% - 2rem);
+} 
+.trend-container {
+    height: calc(100% - 3rem);
+}
 .announ-block, .trend-block {
     height: 100px;
     overflow-y: auto;
+    padding: 1.5rem 1rem 1.5rem 1rem;
 }
 
 .announ-title, .trend-title {
@@ -270,4 +276,5 @@ input, button {
 }
 .announ-desc, .trend-desc {
     font-size: 0.9rem;
+    padding-top: 2px;
 }
