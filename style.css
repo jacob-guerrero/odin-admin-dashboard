@@ -125,7 +125,7 @@ input, button {
 .search-box svg, .side-search-box svg {
     width: calc(100%);
 }
-.side-search-box > img {
+.side-search-box > img, .trend-block > img {
     width: 35px;
     height: 35px;
     border: 1px solid black;
@@ -259,15 +259,23 @@ input, button {
     overflow-y: auto;
 }
 .announ-container {
-    height: calc(100% - 2rem);
+    height: calc((600px + 3.2rem)/2 - 1.5rem);
 } 
 .trend-container {
-    height: calc(100% - 3rem);
+    height: calc((600px + 3.2rem)/2 - 2.5rem); 
 }
 .announ-block, .trend-block {
-    height: 100px;
     overflow-y: auto;
-    padding: 1.5rem 1rem 1.5rem 1rem;
+    overflow-x: hidden;
+    padding: 0.5rem 1rem 0 clamp(5%, 10%, 15%);
+}
+.trend-block {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 35px 1fr;
+    gap: 1rem;
+
+    align-items: center;
 }
 
 .announ-title, .trend-title {
