@@ -74,6 +74,9 @@ h1, h2, h3, p {
     align-items: center;
     gap: 1rem;
 }
+.branding svg {
+    scale: 1.5;
+}
 .option h2 {
     font-size: 1.1rem;
 }
@@ -217,12 +220,22 @@ input, button {
     border-radius: 8px;
 
     display: grid;
+    grid-template-rows: 1fr 25px;
+    grid-template-columns: 1fr;
+
+    padding: 1.5rem 1rem 1.5rem 2rem;
 
     overflow-y: auto;
 }
+.publi-content p {
+    padding-top: 4px;
+}
 .icon-container {
-    align-self: end;
-    justify-self: end;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 25px);
+    gap: 8px;
+    justify-content: end;
 }
 
 
